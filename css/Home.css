@@ -1,0 +1,262 @@
+.banner{
+    background:linear-gradient(rgba(21, 157, 175, 0.422),rgb(0, 0, 0)),url(../images/banner.png);
+    overflow: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    height: 100%;
+}
+.containers{
+    position: relative;
+    top: 40px;
+    display: grid;
+    grid-template-columns:auto auto;
+    padding: 40px;
+}
+
+.right-banner{
+    height: 400px;
+    width: 300px;
+    animation: rightside 3s;
+    box-shadow: 0 0 20px rgb(193, 111, 218);
+    background-color: rgba(154, 76, 193, 0.574);
+}
+.left-banner{
+    height: 350px;
+    border: 1px solid rgba(12, 12, 11, 0);
+    width: 300px;
+    position: relative;
+    left: 160px;
+    bottom: 80px;
+    z-index: 1;
+    animation: leftside 2s;
+    box-sizing: border-box;
+    box-shadow: 0 0 20px rgb(18, 204, 255);
+    background-color: rgba(46, 142, 142, 0.464);
+}
+.shortbanners h1{
+    color: white;
+    padding: 10px;
+    font-size: 40px;
+}
+.shortbanners p{
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+}
+.right-banner button{
+    padding: 8px 20px;
+    margin: 10px;
+}
+.left-banner button{
+
+    padding: 8px 20px;
+    margin: 10px;
+}
+@keyframes leftside{
+
+    from{
+        transform: translateX(-50%);
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes rightside{
+
+    from{
+        transform: translateX(50%);
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.banner-text
+{   position: relative;
+    top:80px;
+    padding: 50px;
+    width:100%;
+   
+}
+.banner-text h1{
+    font-size: 90px;
+    animation: rightside 2s;
+   color: white;
+    text-align: center;
+}
+.banner-text p{
+    color: white;
+    text-align: center;
+    width: 600px;
+    position: relative;
+    animation: leftside 2s;
+    left: 200px;
+    font-size: 20px;
+}
+
+.banner-text > .btn-services{
+    padding: 10px 90px;
+    font-size: 18px;
+    animation: leftbtn 3s;
+    position: relative;
+    color: white;
+    text-transform: uppercase;
+    border: 1px solid white;
+    box-shadow:inset 0 0 20px rgb(217, 137, 239);
+    background-color: rgba(228, 70, 236, 0.329);
+    left:200px;
+    cursor: pointer;
+    top: 50px;
+}
+.banner-text>.btn-services:hover{
+    background-color: rgba(189, 3, 241, 0.876);
+    box-shadow: 0 0 20px pink;
+    transition: 0.7s ease;
+}
+
+.banner-text > .btn-courses{
+    padding: 10px 90px;
+    font-size: 18px;
+    animation: leftbtn 3s;
+    position: relative;
+    color: white;
+    animation: leftbtn 3s;
+    text-transform: uppercase;
+    border: 1px solid white;
+    box-shadow:inset 0 0 20px rgb(6, 189, 213);
+    background-color: rgba(0, 251, 255, 0.329);
+    left:190px;
+    top: 50px;
+}
+@keyframes leftbtn{
+    from{
+        opacity: 0;
+        transform: translateY(-90%);
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+/* second section css */
+.second-section{
+    min-height: 700px;
+    height: auto;
+    padding: 30px;
+    background-color:transparent;
+}
+.second-section button{
+    
+    border: 1px solid rgba(0, 255, 255, 0.199);
+    background-color: rgba(0, 217, 255, 0.445);
+    box-shadow:inset 0 0 20px rgba(0, 174, 255, 0.479);
+    color: white;
+}
+.active{
+    overflow: hidden;
+    opacity: 100%!important;
+    animation:scroll 2.5s ;
+}
+.item h4{
+    color: white;
+}
+.active2{
+    overflow: hidden;
+    opacity: 100%!important;
+    animation:scroll 3.5s ;
+}
+#active1{
+    opacity: 0;
+}
+#active{
+    opacity: 0;
+}
+
+@keyframes scroll{
+    from{
+        opacity: 0;
+        transform:rotate(10deg);
+    }
+    to{
+        opacity: 1;
+    }
+}
+.second-section>h1{
+    text-align: center;
+    font-size: 90px;
+    text-transform: uppercase;
+    color: white;
+    margin: 10px;
+    padding:10px;
+}
+.images-section{
+    width: 100%;
+}
+.images-section img{
+    width: 550px;
+    height: 530px;
+    
+    object-fit:cover;
+   position: relative;
+   left: 60px;
+    object-position: center;
+}
+
+.left-titles{
+    display:grid;
+    grid-template-columns: auto 600px;
+    margin-top:50px ;
+    padding: 30px;
+    position: relative;
+    top: 50px;
+
+}
+.left-titles h1{
+    padding: 20px;
+    color: white;
+    font-size: 60px;
+}
+.left-titles p{
+    color: grey;
+       padding: 30px;
+        font-size:25px;
+        
+}
+
+.left-titles button{
+    padding: 10px 50px;
+    position: relative;
+    left: 30px;
+}
+
+/* logo section */
+.logos{
+    padding: 10px;
+    margin: 10px;
+}
+.logos a{
+    margin: 10px;
+    border: 3px solid rgba(7, 119, 110, 0.397);
+    padding: 10px;
+    width: 60px;
+    color: aqua;
+}
+.right-banner button{
+    box-shadow: 0 0 20px rgba(8, 95, 117, 0.883);
+    background-color:  rgba(12, 160, 173, 0.452);
+    color: white;
+    width: 200px;
+    border: 2px solid cyan;
+}
+.left-banner button{
+    box-shadow: 0 0 20px rgba(8, 95, 117, 0.883);
+    background-color:  rgba(12, 160, 173, 0.452);
+    color: white;
+    width: 200px;
+    border: 2px solid cyan;
+}

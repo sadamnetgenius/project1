@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!-- css -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/Home.css">
+    <link rel="stylesheet" href="./css/mediaquery.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/brands.min.css" integrity="sha512-L+sMmtHht2t5phORf0xXFdTC0rSlML1XcraLTrABli/0MMMylsJi3XA23ReVQkZ7jLkOEIMicWGItyK4CAt2Xw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body style="overflow-x:hidden!important ;" onload="PageLoader()">  
+    <div class="content">
+    <!-- loader -->
+    <div class="loader"id="loadersection">
+        <img src="./images/loader.gif" alt="">
+        <h1>Loading</h1>
+    </div>
+    <!-- header and banner section -->
+    <section class="banner">
+    <!-- navbar -->
+    <div class="sidebar"style="display: none;">
+        <ul>
+            <li><a href=""><i class="fa fa-home" aria-hidden="true"></i></a></li>
+            <li><a href="#Courses"><i class="fa fa-address-book" aria-hidden="true"></i></a></li>
+            <li><a href="#services"><i class="fa fa-box" aria-hidden="true"></i></a></li>
+            <li><a href="#about"><i class="fa fa-users" aria-hidden="true"></i></a></li>
+            <li><a id="feedbackform"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+        </ul>
+    </div>
+        <!-- feedback section -->
+        <div id="feedback-form" class="feedback-form">
+            <button class="hidebutton" id="hidebutton">X</button>
+          <div class="form-section">
+            <center><h1>Give FeedBack</h1></center>
+            <input type="text" placeholder="Your Name .."><br>
+            <textarea type="text" placeholder="Feedback ...." name="" ></textarea><br>
+            <button>Give Feedback</button>
+          </div>
+        </div>
+    <!-- side bar -->
+    <nav class="navbar" >
+        <div class="logosection">
+            <a href=""><img src="" alt=""><img src="./images/NetGEniusLogo-removebg-preview.png" alt=""></a>
+        </div>
+        <!-- navbar logo -->
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#Courses">Courses</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a id="feedbackform">Feedback</a></li>
+
+        </ul>
+        <!-- book tickets -->
+        <div class="courses">
+          <button>Contact us</button>  
+        </div>
+    </nav>
+
+    <!-- navbar ends -->
+    
+    <!-- divs -->
+    <div class="containers">
+        <!-- right banner -->
+        <div class="shortbanners">
+            <div class="right-banner" >
+                <h1>NetGenius</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum laudantium molestias ea eveniet assumenda sunt soluta ratione. Eum culpa enim vitae esse nemo obcaecati neque magni? Impedit nesciunt placeat fugiat.</p>
+                <button>Checkout more</button>
+            </div>
+            <div class="left-banner">
+                <h1>NetGenius   </h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum laudantium molestias ea eveniet assumenda sunt soluta ratione. Eum culpa enim vitae esse nemo obcaecati neque magni? Impedit nesciunt placeat fugiat.</p>
+                <button>Checkout more</button>
+            </div>
+            <!-- left banner -->
+        </div>
+        <!-- banner text -->
+        <div class="banner-text">
+            <h1 id="mobile-tag" style="display: none;">Build A future With Coding</h1>
+            <h1 id="web-tag">Build A future With Coding</h1>
+            <p id="p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus, optio fugiat, exercitationem vero provident eos quaerat laboriosam porro molestiae obcaecati ducimus cupiditate repellendus hic vel cum, voluptatem accusamus aliquam. Modi.</p>
+            <button class="btn-courses">View Course</button>
+            <button class="btn-services">View Course</button>
+
+        </div>
+    </div>
+    </section>
+        <!-- header and banner end  -->
+        <!-- secondsection -->
+        <section class="second-section" id="Courses" >
+            <!-- left side titles -->
+            <div class="left-titles" >
+            <!-- titles and text -->
+            <div class="title-text" data-aos="fade-left"   data-aos-easing="linear"
+            data-aos-delay="300"
+            data-aos-offset="0">
+                <h1>IT Course For A better Future</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus, maiores sint commodi quae numquam facere rerum, aperiam harum illum, perferendis veniam voluptatibus veritatis voluptate corporis optio ut dolor quas! Soluta!</p>
+                <button class="title_btn">Register Now</button>
+            </div>
+                <div class="images-section" >
+                <img class="img1" data-aos="fade-up"   data-aos-easing="linear"
+                data-aos-delay="300"
+                data-aos-offset="0" src="./images/left2.jpg" alt="">
+                </div>
+                
+            </div>
+                 <!-- right side titles -->
+                 <div class="left-titles" >
+                    <div class="images-section">
+                        <img class="img1" data-aos="fade-down-right"  data-aos-easing="linear"
+                        data-aos-delay="300"
+                        data-aos-offset="0"  src="./images/left1.jpg" alt="">
+                        </div>
+            
+                    <!-- titles and text -->
+                    <div class="title-text" data-aos="zoom-out"  data-aos-easing="linear"
+                    data-aos-delay="300"
+                    data-aos-offset="0" >
+                        <h1 id="second-h1">Best Services for You</h1>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus, maiores sint commodi quae numquam facere rerum, aperiam harum illum, perferendis veniam voluptatibus veritatis voluptate corporis optio ut dolor quas! Soluta!</p>
+                        <button class="title_btn"> Visit Services</button>
+                    </div>
+                        
+                    </div>
+                    
+            <!-- right side titles -->
+        </section>
+        <!-- end of second section -->
+        <!-- services --> 
+        <section class="services"  id="services">
+            <div class="titledata" data-aos="fade-down" data-aos-delay="400" data-aos-easing="linear">
+               <h1 class="servicesh1"> Our Services</h1>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore qui obcaecati fuga similique! Doloribus unde quas architecto quasi sed quaerat iste reprehenderit maxime voluptatem obcaecati sunt repellat ducimus ratione molestiae nesciunt ipsa laborum consequatur, eum quia natus provident inventore libero officiis numquam! Vitae culpa reprehenderit esse laborum beatae, sequi hic.</p>
+                  <button id="services_btn">View More</button>
+              </div>
+              <div class="row">
+                <div class="col-1 col" data-aos="fade-down" data-aos-delay="400" data-aos-easing="linear">
+                    <h1>It Courses</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur quibusdam saepe debitis quisquam, et nesciunt excepturi, adipisci officiis, molestias commodi eius ullam soluta. Architecto, blanditiis. Ratione magnam quia et consequatur.</p>
+                    <button>View</button>
+                </div>
+                <div class="col-8 col" data-aos="fade-left" data-aos-delay="400" data-aos-easing="linear">
+                     <h1>It Courses</h1>
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur quibusdam saepe debitis quisquam, et nesciunt excepturi, adipisci officiis, molestias commodi eius ullam soluta. Architecto, blanditiis. Ratione magnam quia et consequatur.</p>
+                     <button>View</button>
+                </div>
+                <div class="col-2 col"  data-aos="fade-right" data-aos-delay="400" data-aos-easing="linear">
+                    <h1>It Courses</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur quibusdam saepe debitis quisquam, et nesciunt excepturi, adipisci officiis, molestias commodi eius ullam soluta. Architecto, blanditiis. Ratione magnam quia et consequatur.</p>
+                    <button>View</button>
+                </div>
+                <div class="col-3 col"  data-aos="fade-down" data-aos-delay="400" data-aos-easing="linear">
+                    <h1>It Courses</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur quibusdam saepe debitis quisquam, et nesciunt excepturi, adipisci officiis, molestias commodi eius ullam soluta. Architecto, blanditiis. Ratione magnam quia et consequatur.</p>
+                    <button>View</button>
+                </div>
+                <div class="col-4 col"  data-aos="fade-right" data-aos-delay="400" data-aos-easing="linear">
+                    <h1>It Courses</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur quibusdam saepe debitis quisquam, et nesciunt excepturi, adipisci officiis, molestias commodi eius ullam soluta. Architecto, blanditiis. Ratione magnam quia et consequatur.</p>
+                    <button>View</button>
+                </div>
+                <div class="col-5 col"  data-aos="fade-left" data-aos-delay="400" data-aos-easing="linear">
+                    <h1>It Courses</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur quibusdam saepe debitis quisquam, et nesciunt excepturi, adipisci officiis, molestias commodi eius ullam soluta. Architecto, blanditiis. Ratione magnam quia et consequatur.</p>
+                    <button>View</button>
+                </div>
+             
+             
+              </div>
+
+         
+           
+       
+      </section>
+        <!-- About section -->
+        <section id="about">
+            <div class="about-container">
+                <div class="image-data">
+                    <img src="./images/about.jpg" data-aos="fade-down-right" data-aos-delay="20000" alt="">
+                </div>
+                <div class="text-data">
+                    <h1 data-aos="fade-down-right" data-aos-delay="20000">About us</h1>
+                    <p data-aos="fade-right" data-aos-delay="20000">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, doloremque accusantium pariatur voluptas fuga tenetur. Minima, quasi aspernatur. Ut tenetur nulla rem pariatur consequuntur repellendus, voluptatibus asperiores dolorem aspernatur. Blanditiis!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero veniam tempore asperiores exercitationem rerum dolores laudantium velit amet numquam minima qui, aliquid voluptas, officia autem corporis fugiat maiores. Fugiat, esse. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur a officia magni iusto repellat modi fuga repellendus error molestiae, minus repudiandae placeat, praesentium voluptates veniam saepe culpa laboriosam voluptatum nobis!</p>
+                    <button data-aos="fade-down-left" data-aos-delay="20000" class="about_btn">Know More About Us</button>
+                </div>
+            </div>
+        </section>
+        <!-- team members -->
+        <section class="teamsection">
+    <u>        <h1 class="hv"  data-aos="fade-down" data-aos-delay="400" data-aos-easing="linear">Team Members</h1></u>
+            <div class="team-members">
+                <div class="member member1"  data-aos="fade-down" data-aos-delay="400" data-aos-easing="linear">
+                    <img src="./images/sadam.jpg" alt="">
+                    <h4>Saddam Sahir</h4>
+                <p>Php \ Python Developer</p>
+
+                    <button class="about_btn">View Details</button>
+
+                </div>
+
+                <div class="member member2"  data-aos="fade-up" data-aos-delay="400" data-aos-easing="linear">
+                    
+                    <img src="./images/shahazaib.jpg" alt="">
+                    <h4>Shahzaib</h4>
+                <p>Andriod Developer</p>
+
+                <button class="about_btn">View Details</button>
+
+                </div>
+               <div class="member member3" data-aos="fade-left" data-aos-delay="400" data-aos-easing="linear">
+                <img src="./images/hassan.jpg" alt="">
+                   
+                <h4>Hassan Murad</h4>
+                <p>Php \ Laravel Developer</p>
+                <button class="about_btn">View Details</button>
+                        
+                </div>
+               <div class="member member4"  data-aos="fade-right" data-aos-delay="400" data-aos-easing="linear">
+                 <img src="./images/ahmed.jpg" alt="">   
+                <h4>Ahmed Raza</h4>
+                <p >Front-end Developer</p>
+
+                <button class="about_btn">View Details</button>
+                </div>
+            </div>
+
+        </section>
+        <!-- contact section -->
+        <section class="contact">
+         
+            <div class="contac-data">
+                <div class="contact-text" >
+                    <h1 data-aos="fade-left">Contact us</h1>
+                    <p data-aos="fade-right">Lorem ipsum,t porro sequi id placeat adipisci, molestiae repellat. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum, laboriosam.</p>
+                    <div class="logos">
+                        <a href="" data-aos="fade-left"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="" data-aos="fade-up"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="" data-aos="fade-right"><i class="fa-brands fa-github"></i></a>
+                        <a href="" data-aos="fade-down"><i class="fa-brands fa-google"></i></a>
+
+                    </div>
+                </div>
+                <!-- input section -->
+                <div class="inputarea" data-aos="fade-left">
+                    <input type="text" placeholder="Name..." ><br>
+                    <input type="text" placeholder="Email address..."><br>
+                    <input type="text" placeholder="Subject"><br>
+                    <textarea name="" id="" placeholder="Message"></textarea><br>
+
+                    <button>Submit</button>
+                </div>
+            </div>
+        </section>
+        <!-- footer -->
+        <footer>
+            <div class="footer-items">
+ 
+                <div class="about">
+                 
+                        <a href=""><img src="" alt=""><img src="./images/NetGEniusLogo-removebg-preview.png" alt=""></a>
+                    
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus corporis laborum ullam et ab quia necessitatibus ratione aliquam, deleniti, voluptatum consectetur ut laudantium qui quidem, molestiae expedita beatae minima officia pariatur quo enim maiores obcaecati. At placeat quaerat eos, modi deserunt doloremque recusandae quos porro rerum itaque ex, ipsam ducimus!</p>
+                </div>
+                <!-- links -->
+                <div class="links">
+                    <h1 class="link-title">Links</h1>
+                    <ul>
+                        <li><a href="">Home</a></li><br>
+                        
+                        <li><a href="">Services</a></li><br>
+                        <li><a href="">Courses</a></li><br>
+                        <li><a href="">About</a></li><br>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </div>
+                <!-- contact -->
+                <div class="contact_section">
+                    <h1>Contact</h1><br>
+                    <ul>
+                        <li>
+                            Email : <br>
+                            example@gmail.com
+                        </li><br>
+                        <li>
+                            Address : <br>
+                            example@gmail.com
+                        </li><br>
+
+                        <li>
+                            Phone : <br>
+                           +92 3030239865
+                        </li>
+
+                    </ul>
+                </div>
+            </footer>
+        </div>
+        <div class="last-section">
+            Alright Reserved by Hassan Murad 2023.
+         
+        </div></div> </div> 
+</body>
+</html>
+<!-- js and jquery -->
+<script src="./js/home.js"></script>
+<script src="./js/home.js"></script>
+<script src="./js/home.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/js/brands.min.js" integrity="sha512-3Zn/FU2NPNNFPn4888PtuSwAzZh7osT9728qBI3FcY33PywjzSM96QVjciohyurUKr6ketdyNYTdNvPauAnEmw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/js/all.min.js" integrity="sha512-2bMhOkE/ACz21dJT8zBOMgMecNxx0d37NND803ExktKiKdSzdwn+L7i9fdccw/3V06gM/DBWKbYmQvKMdAA9Nw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.js" integrity="sha512-nO7wgHUoWPYGCNriyGzcFwPSF+bPDOR+NvtOYy2wMcWkrnCNPKBcFEkU80XIN14UVja0Gdnff9EmydyLlOL7mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- end of script sources -->
+<script>
+    AOS.init();
+    // feedback-form-modal
+
+    let feedback_form        = $("#feedback-form") ;
+    let open_form            = $("#feedbackform");
+    let close_from           = $("#hidebutton");
+   
+   $(open_form).on('click' , function(){
+        
+    feedback_form.show();
+
+   });
+   $(close_from).on('click' , function(){
+        
+        feedback_form.hide();
+    
+       });
+
+       //
+       let Loader           = $("#loader");
+    //   
+var preloader= document.getElementById('loadersection');
+function PageLoader(){
+
+preloader.style.display="none";
+
+}
+
+</script>

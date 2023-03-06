@@ -1,0 +1,637 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #096a93;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #0db1e3;
+    border-radius:10px ;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #2ae6ff;
+  }
+body{
+
+  
+    height: 100%;
+    background:linear-gradient(rgb(0, 0, 0),rgba(0, 0, 0, 0.945)),url(../images/banner.png);
+    background-repeat: no-repeat;
+    width:auto;
+    overflow-x: hidden!important;
+    background-position: center;
+    background-size: cover;
+}
+/* navbar */
+.navbar{
+    display: flex;
+    padding: 30px;
+  
+    height: 80px;
+    justify-content: space-between;
+    background-color:transparent;
+   
+}
+.navbar > ul{
+    display: flex;
+    list-style: none;
+}
+.navbar > ul >li a{
+    color: white;
+
+    margin: 10px;
+    text-decoration: none;
+    font-size: 20px;
+  
+
+}
+.titledata{
+    position: relative;
+    top: 50px;
+}
+/* stroke */
+nav ul li a,
+nav ul li a {
+  position: relative;
+}
+nav ul li a:after,
+nav ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #0cffdf;
+  height: 3px;
+}
+nav ul li a:hover:after {
+  width: 100%;
+transition: 1s ease;
+
+}
+
+nav ul li a {
+  transition: all 2s;
+}
+
+nav ul li a:after {
+  text-align: left;
+  content: '.';
+  margin: 0;
+  opacity: 0;
+}
+nav ul li a:hover {
+  color: #fff;
+  z-index: 1;
+}
+nav ul li a:hover:after {
+  z-index: -10;
+  animation: fill 1s forwards;
+  -webkit-animation: fill 1s forwards;
+  -moz-animation: fill 1s forwards;
+  opacity: 1;
+}
+
+
+
+
+
+/* navbar ends */
+.logosection img{
+    width: 200px;
+    position: relative;
+    bottom: 85px;
+}
+
+/* get course */
+.courses button{
+    background-color: transparent;
+    color:white;
+    font-weight:600;
+    box-shadow: inset 0 0 20px rgb(0, 255, 229);
+    padding: 10px 50px;
+    position: relative;
+    bottom: 15px;
+    cursor: pointer;
+    font-size: 20px;
+    border:4px solid rgb(15, 187, 167);
+}
+
+.courses button:hover{
+    transition: 0.6s ease-in-out;
+    box-shadow: 0 0 20px rgba(4, 205, 255, 0.883);
+    background-color:  rgb(113, 238, 249);
+}
+.left-titles{
+    display: flex;
+    justify-content: space-between;
+}
+/* services */
+.services{
+  
+    height: 800px;
+    margin: auto!important;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 400px auto;
+    column-gap: 200px;
+   
+    padding: 30px;
+}
+.titledata h1{
+    font-size: 80px;
+    white-space: nowrap;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}.titledata p{
+    font-size: 20px;
+    padding: 10px;
+}
+.titledata button{
+    position: relative;
+    top: 40px;
+}
+.row{
+    display: grid;
+    grid-template-columns:250px 250px 250px;
+    column-gap: 40px;
+    row-gap: 30px;
+}
+.col-1{
+    height: 300px;
+    background-color: #0cffdf41;
+}
+.services h1{
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+}
+.services p{
+    color: white;
+    padding: 10px;
+}
+.services button{
+    padding: 10px;
+    width: 100%;
+    
+    border: 1px solid rgba(0, 255, 255, 0.199);
+    background-color: rgba(0, 217, 255, 0.411);
+    box-shadow:inset 0 0 20px rgba(0, 174, 255, 0.479);
+    color: white;
+}
+.col-2{
+
+    height: 300px;
+    background-color: #fb0cff41;
+}
+.col-3{
+
+    height: 300px;
+    background-color: #ffe30c41;
+}
+.col-4{
+
+    height: 300px;
+    background-color: #ff6d0c41;
+}
+.col-5{
+
+    height: 300px;
+    background-color: #ff0c6541;
+}
+.col-6{
+
+    height: 300px;
+    background-color: #0ce7ff41;
+}
+.col-7{
+
+    height: 300px;
+    background-color: #0cff9641;
+}
+.col-8{
+
+    height: 300px;
+    background-color: #ffae0041;
+}
+.serv{
+    color: white;
+    margin-top: 30px;
+    padding: 30px;
+    font-size: 80px;
+    text-transform: uppercase;
+    text-align: center;
+}
+/* footer */
+footer{   background:linear-gradient(rgb(0, 0, 0),rgba(11, 111, 144, 0.542)),url(../images/banner.png);
+    overflow: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 40vh;
+    height: auto;
+}
+.last-section{
+    width: 100%;
+    background-color: rgba(6, 37, 43, 0.42);
+    color: white;
+    position: relative;
+
+   text-align: center;
+    padding: 10px;
+}
+.about img{
+    width: 180px;
+}
+.footer-items{
+    padding: 40px;
+    display: grid;
+    grid-template-columns:auto 600px auto;
+    column-gap: 30px;
+
+}
+.about p{
+    color: white;
+}
+.links {
+    padding: 10px;
+}
+.links>ul{
+    padding: 50px;
+    list-style: none;
+}
+.links>ul>li>a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+
+   
+}
+.links > li{
+    padding: 10px;
+}
+.link-title{
+    color: white;
+    margin-left: 40px;
+}
+.contact{
+    padding:10px;
+    margin-top: 10px;
+    color: white;
+    font-size: 20px;
+}
+/* team members */
+.teamsection{
+    padding: 40px;
+    height: 100vh;
+}
+.hv{
+    
+    color: white;
+    text-align: center;
+    font-size: 70px;
+    padding: 30px;
+}
+button{
+    cursor: pointer!important;
+}
+
+.team-members{
+    position: relative;
+    top: 30px;
+    left: 30px;
+    display: grid;
+    padding: 30px;
+    grid-template-columns: 300px 300px 300px 300px;
+    column-gap: 20px;
+    color: white;
+}
+.member{
+    height: auto;
+    padding: 10px;
+    }
+.member img{
+    border: 2px solid rgba(9, 103, 105, 0.8);
+    box-shadow:0 0  20px rgba(9, 103, 105, 0.8);
+    width: 200px;
+    position: relative;
+    left: 40px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit:fill;
+    object-position: center;
+}
+.member p{
+    color: grey;
+    text-align: center;
+    white-space: nowrap;
+}
+.member h4{
+    text-align: center;
+    margin-top: 30px;
+    background-color: transparent;
+    padding: 8px 50px;
+    color:color;
+    
+    text-transform: uppercase;
+    font-size: 18px;
+    border-radius: 4px;
+}
+.member button{
+    text-align: center;
+    margin-top: 30px;
+    background-color:transparent;
+    box-shadow: inset 0 0 20px rgba(0, 174, 255, 0.479);
+    padding: 8px 70px;
+    white-space: nowrap;
+    color: black;
+    text-transform: uppercase;
+    font-size: 18px;
+    width: 100%;
+    color: white;
+    border-radius: 4px;
+}
+.member button:hover{
+    
+    transition: 0.7s linear;
+    background-color:rgba(0, 217, 255, 0.497);
+    box-shadow: 0 0 20px rgba(0, 174, 255, 0.479);
+    border:2px solid rgba(0, 174, 255, 0.479);
+
+   
+}
+/* contact section */
+.contac-data{
+
+    display: flex;
+    padding: 50px;
+    justify-content: space-between;
+}
+.contact-text{
+    width: 600px;
+    position: relative;
+    top: 30px;
+    padding: 10px;
+}
+.contact-text p{
+    padding: 20px;
+}
+.contact-text h1{
+    font-size: 60px;
+    padding: 10px;
+}
+
+.inputarea{
+    height: auto;
+padding: 10px;
+width: 400px;
+    border: 1px solid rgb(5, 83, 97);
+    background-color: rgba(0, 217, 255, 0.233);
+
+}
+.inputarea input{
+    padding: 8px;
+    margin-top: 10px;       
+    color: white;
+    width: 100%;
+    border: 1px solid rgba(0, 255, 255, 0.199);
+    background-color: rgba(0, 217, 255, 0.233);
+    box-shadow:inset 0 0 20px rgba(0, 174, 255, 0.479);
+}
+.inputarea input::placeholder{
+    color: white;
+}
+
+.inputarea input:focus{
+    outline: 3px solid cyan;
+}
+.inputarea textarea::placeholder{
+    color: white;
+}
+
+.inputarea textarea:focus{
+    outline: 3px solid cyan;
+}
+.inputarea textarea{
+    width: 100%;
+    margin-top: 10px;
+    border: 1px solid rgba(0, 255, 255, 0.199);
+    background-color: rgba(0, 217, 255, 0.233);
+    box-shadow:inset 0 0 20px rgba(0, 174, 255, 0.479);
+    height: 100px;
+    padding: 10px;
+}
+.inputarea button{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgba(0, 255, 255, 0.199);
+    background-color: rgba(0, 217, 255, 0.774);
+    box-shadow:inset 0 0 20px rgba(0, 174, 255, 0.479);
+    color: white;
+}
+.about_btn{
+    border: 1px solid rgba(0, 255, 255, 0.199);
+    background-color: rgba(0, 217, 255, 0.542)!important;
+}
+/* case  */
+.about-container{
+    display: grid;
+    grid-template-columns: 500px auto;
+    column-gap: 100px;
+    padding: 30px;
+}
+.image-data{
+    padding: 30px;
+}
+.about-container>.image-data img{
+    width: 100%;
+}
+.text-data{
+    padding: 30px;
+}
+.text-data h1{
+color: white;
+padding-bottom: 30px;
+font-size: 80px;
+}
+.text-data p{
+    color: grey;
+    font-size: 25px;
+    
+}
+.text-data button{
+    text-align: center;
+    margin-top: 30px;
+    background-color:transparent;
+    box-shadow: inset 0 0 20px rgba(0, 174, 255, 0.479);
+    padding: 8px 70px;
+    white-space: nowrap;
+    color: black;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: white;
+    border-radius: 4px;
+}
+.text-data button:hover{
+    
+    transition: 0.7s linear;
+    background-color:rgba(0, 217, 255, 0.497);
+    box-shadow: 0 0 20px rgba(0, 174, 255, 0.479);
+    border:2px solid rgba(0, 174, 255, 0.479);
+}
+
+/* modals */
+.feedback-form
+{   animation: form-open 1.3s;
+    display: none;
+    background: rgba(3, 60, 58, 0.938);
+    position: fixed;
+    height: 100vh;
+    margin: auto;
+    width: 100%;
+    z-index: 1000;
+}
+@keyframes form-open{
+    from{
+        opacity: 0;
+        transform: scale(1.2);
+    }
+    to
+    {
+        opacity: 1;
+    }
+}
+a{
+    cursor: pointer;
+}
+
+.form-section{
+    display: grid;
+    position: relative;
+    top:150px;
+    grid-template-columns: 350px;
+    justify-content: center;
+}
+.form-section input{
+    padding: 8px;
+    margin-top: 10px;       
+    color: white;
+    width: 100%;
+    border: 1px solid rgba(0, 255, 255, 0.199);
+    background-color: rgba(0, 217, 255, 0.233);
+    box-shadow:inset 0 0 20px rgba(0, 174, 255, 0.479);
+}
+.form-section input::placeholder{
+    color: white;
+}
+.form-section input:focus{
+    outline: 3px solid cyan;
+}
+.form-section textarea{
+    width: 100%;
+    margin-top: 10px;
+    border: 1px solid rgba(0, 255, 255, 0.199);
+    background-color: rgba(0, 217, 255, 0.233);
+    box-shadow:inset 0 0 20px rgba(0, 174, 255, 0.479);
+    height: 100px;
+    padding: 10px;
+}
+.form-section textarea:focus{
+    outline: 3px solid cyan;
+}
+.form-section textarea::placeholder{
+    color: white;
+}
+.form-section button{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgba(0, 255, 255, 0.199);
+    background-color: rgba(0, 217, 255, 0.672);
+    box-shadow:inset 0 0 20px rgba(0, 174, 255, 0.479);
+    color: white;
+}
+.form-section button:hover{
+        
+    transition: 0.7s linear;
+    background-color:rgba(0, 217, 255, 0.497);
+    box-shadow: 0 0 20px rgba(0, 174, 255, 0.479);
+    border:2px solid rgba(0, 174, 255, 0.479);
+}
+.form-section h1{
+    color: white;
+    font-size: 2.5rem;
+}
+.hidebutton{
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid rgb(15, 187, 167);
+    background-color: rgba(0, 174, 255, 0.479);
+    color: white;
+}
+.hidebutton:hover{
+    box-shadow: 0 0 20px rgba(0, 217, 255, 0.672);
+    transition: 0.7s linear;
+}
+
+.loader{
+    position: fixed;
+    height: 100vh;
+    background-color: rgb(3, 44, 76);
+    width: 100%;
+    z-index: 1000;
+    animation: loading 1s;
+}
+@keyframes loading
+{
+    from{
+        opacity: 1;
+        
+    }
+    to
+    {
+        opacity: 1;
+        transform:scale(1.3);
+    }
+}
+
+.loader h1{
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    text-transform: uppercase;
+    font-size: 60px;
+}
+/*  */
+.loader img{
+    color: white;
+    text-align: center;
+    position: relative;
+       top: 45%;
+
+    margin: auto;
+    display: flex;
+    flex-direction: column-reverse;
+    font-size: 60px;
+}
